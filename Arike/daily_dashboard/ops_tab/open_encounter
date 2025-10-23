@@ -66,7 +66,6 @@ FROM encounters_with_tags;
 
 
 -- Drilldown Query: List of Open Encounters with Tag Filters
--- Description: This query retrieves the list of open encounters in facility_id 2 with applied tag filters.
 
 WITH base_data AS (
     SELECT
