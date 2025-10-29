@@ -68,9 +68,13 @@ FROM encounters_with_tags;
 
 ```
 
+<<<<<<< HEAD:Arike/daily_dashboard/ops_tab/open_encounter.md
 # Drilldown Query: List of Open Encounters with Tag Filters
 
 ```sql
+=======
+-- Drilldown Query: List of Open Encounters with Tag Filters
+>>>>>>> f4a94f9171f1746021ec4df737a4044b48b7d0eb:Arike/daily_dashboard/ops_tab/open_encounter
 
 WITH base_data AS (
     SELECT
