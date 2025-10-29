@@ -1,5 +1,7 @@
--- KPI CARD: Count of Open Encounters with Tag Filters
--- Description: This query counts the number of open encounters in facility_id 2,
+# KPI CARD: Count of Open Encounters with Tag Filters
+ 
+ ```sql
+
 
 WITH base_data AS (
     SELECT
@@ -64,9 +66,11 @@ encounters_with_tags AS (
 SELECT COUNT(*) AS patient_count
 FROM encounters_with_tags;
 
+```
 
--- Drilldown Query: List of Open Encounters with Tag Filters
--- Description: This query retrieves the list of open encounters in facility_id 2 with applied tag filters.
+# Drilldown Query: List of Open Encounters with Tag Filters
+
+```sql
 
 WITH base_data AS (
     SELECT
@@ -139,3 +143,5 @@ WHERE 1=1
 [[AND LOWER(pt.cross_subsided_model) ILIKE LOWER({{cross_subsided_model_filter}})]]
 
 ORDER BY bd.created_date desc;
+
+```
