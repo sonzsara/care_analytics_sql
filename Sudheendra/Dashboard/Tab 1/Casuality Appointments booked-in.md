@@ -1,4 +1,6 @@
--- A KPI card to get the count of Casuality Appointments Booked -in
+# KPI Query to get the count of Casuality Appointments Booked -in
+
+```sql 
 
 SELECT
     COUNT(public.emr_tokenbooking.id) AS booked_appointments
@@ -12,11 +14,14 @@ WHERE 1=1
   [[AND {{booking_date}}]] 
 ;
 
+```
 
 
 
 
--- Drill down to get the list of Patients booked in for Casuality
+# Drill down to get the list of Patients booked in for Casuality
+
+```sql
 
 SELECT
     
@@ -44,3 +49,4 @@ GROUP BY
     public.users_user.last_name
 ORDER BY public.emr_patient.name;
 
+```
